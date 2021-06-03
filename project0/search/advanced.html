@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Advanced Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="container">
+            <div>
+                <a href="index.html">
+                    All
+                </a>
+            </div>
+            <div>
+                <a href="images.html">
+                    Images
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="heading">
+        <span> Advanced Search</span>
+    </div>
+    <hr>
+
+    <form action="https://www.google.com/search" method="GET" name = "f">
+        <div class="grid">
+            <div class="grid-item" style="font-weight: 500; font-size: 16px; color: #333;">
+                <span>Find pages with...</span>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item resp" style="font-size: 13px; font-weight: 700; color: #777;">
+                <span>To do this in the search box.</span>
+            </div>
+            <div class="grid-item left-item">
+                <span>all these words:</span>
+            </div>
+            <div class="grid-item"><input autocomplete="off" class="search" type="text" name="as_q"></div>
+            <div class="grid-item right-item resp">
+                <span>Type the important words: tri-colour rat terrier</span>
+            </div>
+            <div class="grid-item left-item">
+                <span>this exact word or phrase:</span>
+            </div>
+            <div class="grid-item"><input autocomplete="off" class="search" type="text" name="as_epq"></div>
+            <div class="grid-item right-item resp">
+                <span>Put exact words in quotes: "rat terrier"</span>
+            </div>
+            <div class="grid-item left-item">
+                <span>any of these words:</span>
+            </div>
+            <div class="grid-item"><input autocomplete="off" class="search" type="text" name="as_oq"></div>
+            <div class="grid-item right-item resp">
+                <span>Type OR between all the words you want: miniature OR standard</span>
+            </div>
+            <div class="grid-item left-item">
+                <span>none of these words:</span>
+            </div>
+            <div class="grid-item"><input autocomplete="off" class="search" type="text" name="as_eq"></div>
+            <div class="grid-item right-item resp">
+                <span>Put a minus sign just before words that you don't want: -rodent, -"Jack</span>
+                Russell"
+            </div>
+            <div class="grid-item left-item">
+                <span>numbers ranging from:</span>
+            </div>
+            <div class="grid-item">
+                <div class="container1">
+                    <div>
+                        <input autocomplete="off" class="search" type="text" name="as_nlo">
+                    </div>
+                    <div style="padding-left: 10px; padding-right: 10px;"> to </div>
+                    <div><input autocomplete="off"  class="search" type="text" name="as_nhi"></div>
+                </div>
+            </div>
+            <div class="grid-item right-item resp">
+                <span>Put two full stops between the numbers and add a unit of measurement:</span>
+                10..35 kg,
+                £300..£500, 2010..2011
+            </div>
+        </div>
+        <div class="flex">
+            <input style="width: auto;" class="submit" value="Advanced Search" type="submit">
+        </div>
+    </form>
+    <hr>
+</body>

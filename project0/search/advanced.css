@@ -1,0 +1,149 @@
+body {
+    font-family: arial,sans-serif;
+}
+
+#logo {
+    height: auto;
+    width: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div {
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 10px;
+    width: auto;
+}
+
+a {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.heading {
+    display: block;
+    width: auto;
+    margin: 25px 35px;
+}
+
+.heading > span {
+    color: #d93025;
+    font-size: 20px;   
+}
+
+hr {
+    color: #ebebeb;
+    border: none;
+    height: 1px;
+    background-color: #ebebeb;
+}
+
+.grid {
+    background-color: white;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px auto auto;
+    margin: 25px 35px;
+}
+
+
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: left;   
+}
+
+.grid-heading {
+    background-color: white;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+    margin: 25px 35px;
+}
+
+.left-item {
+    color: #222;
+    font-size: 13px;
+}
+
+.right-item {
+    color: #555;
+    font-size: 11px;
+}
+
+input {
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 20px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1 > div {
+    font-size: 16px;
+    width: auto;
+}
+
+span {
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+.submit {
+    background-color: #4d90fe;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #f8f9fa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 25px 100px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.submit:hover {
+    border: 2px solid #ececec;
+    box-shadow: 50px #808080;
+    background-color: #4787ed;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .grid {
+        grid-template-columns: 200px auto;
+    }
+    .resp {
+        display: none;
+    }
+}
