@@ -1,0 +1,37 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Edit
+{% endblock %}
+
+{% block body %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Wiki - Edit Page</h1>
+        <p class="lead">Edit a page in our encyclopedia!</p>
+
+        {% if messages %}
+        {% for message in messages %}
+
+        <p style="color: red;">
+            {{message}}
+        </p>
+
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{edit}}
+        </div>
+
+        <br>
+        <input class="save btn btn-info" type="submit" value="Save" />
+    </form>
+</div>
+
+{% endblock %}
