@@ -1,7 +1,7 @@
 # Wiki
 This a Django project called wiki that contains a single app called encyclopedia. This app converts markdown text to HTML pages and produces a Wikipedia-like online encyclopedia.
 ---
-##Specification
+## Specification
 -**Entry Page:** Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, renders a page that displays the contents of that encyclopedia entry.
 The view renders the content of the encyclopedia entry by calling the appropriate util function.
 If an entry is requested that does not exist, the user is presented with an error page indicating that their requested page was not found.
@@ -10,7 +10,9 @@ If the entry does exist, the user is presented with a page that displays the con
 -**Search:** Allows the user to type a query into the search box in the sidebar to search for an encyclopedia entry.
 If the query matches the name of an encyclopedia entry, the user is redirected to that entry’s page.
 If the query does not match the name of an encyclopedia entry, the user is taken to a search results page that displays a list of all encyclopedia entries that have the query as a substring. 
+
 > For example, if the search query were ytho, then Python should appear in the search results.
+
 Clicking on any of the entry names on the search results page takes the user to that entry’s page.
 -**New Page:** Clicking “Create New Page” in the sidebar takes the user to a page where they can create a new encyclopedia entry.
 Users can enter a title for the page and, in a textarea, enter the Markdown content for the page.
