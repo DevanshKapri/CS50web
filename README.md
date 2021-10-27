@@ -1,5 +1,5 @@
 # Wiki
-This a Django project called wiki that contains a single app called encyclopedia. This app converts markdown text to HTML pages and produces a Wikipedia-like online encyclopedia.
+A Wikipedia-like online encyclopedia.
 ---
 ## Specification
 - **Entry Page:** Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, renders a page that displays the contents of that encyclopedia entry.
